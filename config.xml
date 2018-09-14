@@ -89,4 +89,5 @@
         <variable name="CHANNEL_NAME" value="master" />
         <variable name="UPDATE_METHOD" value="background" />
     </plugin>
+    <plugin name="phonegap-plugin-push" spec="^2.2.3" />
 </widget>

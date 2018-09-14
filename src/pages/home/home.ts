@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
-//import { InvalidLoginPage } from '../invalid-login/invalid-login';
+// import { InvalidLoginPage } from '../invalid-login/invalid-login';
 import { Storage } from '@ionic/storage';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import {Navbar} from 'ionic-angular';
 //import { WelcomePage } from '../welcome/welcome';
 import { ViewChild } from '@angular/core';
+
 
 
 @Component({
@@ -26,14 +27,14 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    console.log('ionViewDidLoad HomePage');
     this.getRegistrationID();
   }
 
 
   login() {
-    var link_register = 'https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=22D78K&redirect_uri=http%3A%2F%2Flocalhost%3A8100&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&&prompt=login consent&state=';
-    var link = 'https://www.fitbit.com/oauth2/authorize?response_type=code&cflient_id=22D78K&redirect_uri=http%3A%2F%2Flocalhost%3A8100&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=604800';
+    var link_register = 'https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=228NH4&redirect_uri=http%3A%2F%2Flocalhost:8100%2Fkidfit%2Fhandle_redirect.php&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&prompt=login consent&state=';
+    var link = 'https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=228NH4&redirect_uri=http%3A%2F%2Flocalhost:8100%2Fkidfit%2Fhandle_redirect.php&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&state=';
     this.getLoginUserDetails().then(
      data => {
        console.log('my data: ', data);
@@ -82,7 +83,7 @@ export class HomePage {
                 {
                   this.navCtrl.push('InvalidLoginPage',{error: "acess denied"});
                 }
-            this.navCtrl.push('LoginPage');
+            this.navCtrl.push('HomePage');
               }
             else if(data['login']=="success"){
               this.navCtrl.push('DisplayDataPage',{data:data});
@@ -119,7 +120,7 @@ export class HomePage {
 
 
   register(){
-    var link = 'https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=228NH4&redirect_uri=http%3A%2F%2Fkidsteam.boisestate.edu%2Fkidfit%2Fhandle_redirect.php&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&prompt=login consent&state=';
+    var link = 'https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=228NH4&redirect_uri=http%3A%2F%2Flocalhost:8100%2Fkidfit%2Fhandle_redirect.php&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&prompt=login consent&state=';
     
     this.getRegisterUserDetails().then(
     data => {
@@ -169,6 +170,7 @@ export class HomePage {
      
       link = link.concat(this.registrationID);
       
+      console.log(this.data.username, this.data.password);
       
       return new Promise(resolve => {
         this.httpClient.get(link)
