@@ -1,8 +1,8 @@
 {
-  "name": "Fit-Bit-Relay",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular",
-  "pro_id": "393631eb"
+    "name": "Fit-Bit-Relay",
+    "integrations": {
+        "cordova": {}
+    },
+    "type": "ionic-angular",
+    "pro_id": "393631eb"
 }

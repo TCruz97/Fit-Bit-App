@@ -31,6 +31,7 @@
     "cordova-plugin-advanced-http": "^2.0.1",
     "cordova-plugin-inappbrowser": "^3.0.0",
     "cordova-plugin-ionic": "^5.1.6",
+    "cordova-plugin-whitelist": "^1.3.3",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
     "phonegap-plugin-push": "^2.2.3",
@@ -52,7 +53,8 @@
         "CHANNEL_NAME": "master",
         "UPDATE_METHOD": "background"
       },
-      "phonegap-plugin-push": {}
+      "phonegap-plugin-push": {},
+      "cordova-plugin-whitelist": {}
     }
   }
 }
