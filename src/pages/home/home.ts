@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
-// import { InvalidLoginPage } from '../invalid-login/invalid-login';
+import { InvalidLoginPage } from '../invalid-login/invalid-login';
+import { Platform } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import {Navbar} from 'ionic-angular';
