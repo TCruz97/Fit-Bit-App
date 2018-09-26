@@ -25,7 +25,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Invite', component: InviteFriendsPage },
-      { title: 'Choose Games', component: GamesPage }
+      { title: 'Choose Activity', component: GamesPage }
     ];
 
   }
