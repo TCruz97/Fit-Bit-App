@@ -109,10 +109,11 @@ export class HomePage {
     const httpHeaders = {
       headers: new HttpHeaders({
         'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS'
+        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+        'Content-Type': 'application/x-www-form-urlencoded'
       })
     };
-    var link = 'http://kidsteam.boisestate.edu/kidfit/verify_login.php?username='.concat(this.data.username);
+    var link = 'https://kidsteam.boisestate.edu/kidfit/verify_login.php?username='.concat(this.data.username);
     link = link.concat('&password=');
     link = link.concat(this.data.password);
     link = link.concat('&loginType=login');
@@ -178,7 +179,8 @@ export class HomePage {
     const httpHeaders = {
       headers: new HttpHeaders({
         'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS'
+        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+        'Content-Type': 'application/x-www-form-urlencoded'
       })
     };
     var link = 'http://kidsteam.boisestate.edu/kidfit/verify_login.php?username='.concat(this.data.username);
@@ -204,7 +206,8 @@ export class HomePage {
     const httpHeaders = {
       headers: new HttpHeaders({
         'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS'
+        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+        'Content-Type': 'application/x-www-form-urlencoded'
       })
     };
     console.log("getting user data");
