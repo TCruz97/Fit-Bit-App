@@ -8,7 +8,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { InviteFriendsPage } from '../pages/invite-friends/invite-friends';
 import { GamesPage } from '../pages/games/games';
-
+import { StatusPage } from '../pages/status/status';
+import { LeaderboardPage } from '../pages/leaderboard/leaderboard';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -23,7 +24,9 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     MyApp,
     HomePage,
     InviteFriendsPage,
-    GamesPage
+    GamesPage,
+    StatusPage,
+    LeaderboardPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,9 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     MyApp,
     HomePage,
     InviteFriendsPage,
-    GamesPage
+    GamesPage,
+    StatusPage,
+    LeaderboardPage
   ],
   providers: [
     StatusBar,
