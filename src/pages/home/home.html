@@ -1,30 +1,36 @@
 <ion-header>
     <ion-navbar>
-        <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+        <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon> -->
+        <!-- </button> -->
         <ion-title>Fit Bit Relay Game</ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding id="homepage">
     <ion-list>
-        <ion-item>
-            <ion-label floating>Email</ion-label>
-            <ion-input type="email" name="username" [(ngModel)]="data.username"></ion-input>
+        <ion-item class="login-info">
+            <ion-label floating style="color:white">Email</ion-label>
+            <ion-input type="email" name="username" [(ngModel)]="data.username" style="color:white"></ion-input>
         </ion-item>
 
-        <ion-item>
-            <ion-label floating>Password</ion-label>
-            <ion-input type={{type}} name="password" [(ngModel)]="data.password"></ion-input>
+        <ion-item class="login-info">
+            <ion-label floating style="color:white">Password</ion-label>
+            <ion-input type={{type}} name="password" [(ngModel)]="data.password" style="color:white"></ion-input>
             <button ion-button clear item-end (click)='showHide()' style="height:32px;">
             <ion-icon name="eye" style="font-size:32px;"></ion-icon>
           </button>
 
         </ion-item>
 
-        <button ion-button full (click)="login()">Login</button>
 
-        <button ion-button full (click)="register()">Register</button>
+        <button ion-button round full (click)="login()">Login</button>
+
+        <button ion-button round full (click)="register()">Register</button>
     </ion-list>
+    <!-- <ion-avatar item-start id="logo">
+        <img src="assets/imgs/logo2.png">
+    </ion-avatar> -->
+    <button ion-button round float-right (click)="openInviteFriends()">Next<ion-icon name="arrow-forward"></ion-icon></button>
+
 </ion-content>

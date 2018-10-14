@@ -1,0 +1,67 @@
+.card-background-page {
+    ion-card {
+        position: relative;
+        text-align: center;
+        height: 20%;
+    }
+    .card-title {
+        position: absolute;
+        top: 36%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+    }
+    .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #fff;
+    }
+}
+
+.game-list {
+    background-color: #D2DAE7;
+}
+
+#run-button {
+    background: #04ACE3;
+    padding: 3%;
+    font-size: 10.0em;
+    .atv-header {
+        font-size: 0.9em;
+    }
+}
+
+#walk-button {
+    background: #7AC74F;
+    padding: 3%;
+    .atv-header {
+        font-size: 0.9em;
+    }
+}
+
+#climb-button {
+    background: #F9DC5C;
+    padding: 3%;
+    .atv-header {
+        font-size: 0.9em;
+    }
+}
+
+#bike-button {
+    background: #FF4C50;
+    padding: 3%;
+    .atv-header {
+        font-size: 0.9em;
+    }
+}
+
+#swim-button {
+    background: #118AB2;
+    padding: 3%;
+    .atv-header {
+        font-size: 0.9em;
+    }
+}

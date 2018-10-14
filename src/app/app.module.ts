@@ -6,12 +6,15 @@ import { Push } from '@ionic-native/push';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { InviteFriendsPage } from '../pages/invite-friends/invite-friends';
+import { GamesPage } from '../pages/games/games';
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HttpModule } from '@angular/http';
+//import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
@@ -19,27 +22,28 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    InviteFriendsPage,
+    GamesPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    HttpModule,
     HttpClientModule,
+    IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    InviteFriendsPage,
+    GamesPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     InAppBrowser,
     Push,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
