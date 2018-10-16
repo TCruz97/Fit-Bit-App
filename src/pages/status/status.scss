@@ -4,14 +4,25 @@
    font-size: 10.0em;
    .atv-header {
     font-size: 0.5em;
+        display: inline-block;
+    }
+    .percentage{
+    font-size: 0.5em;
+        display: inline-block;
     }
 }
 #act2{
+    opacity: .3;
    background:#7AC74F;
    padding: 3%;
    font-size: 10.0em;
    .atv-header {
     font-size: 0.5em;
+    display: inline-block;
+    };
+    .percentage{
+    font-size: 0.5em;
+        display: inline-block;
     }
 }
 #act3{
@@ -20,5 +31,11 @@
    font-size: 10.0em;
    .atv-header {
     font-size: 0.5em;
+        display: inline-block;
+    }
+    
+    .percentage{
+    font-size: 0.5em;
+        display: inline-block;
     }
 }
