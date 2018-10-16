@@ -6,18 +6,25 @@
 -->
 <ion-header>
 
-    <ion-navbar>
-        <button ion-button menuToggle icon-only persistent='true'>
-            <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>Invite Friends</ion-title>
-    </ion-navbar>
+  <ion-navbar>
+    <ion-title>InviteFriends</ion-title>
+  </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-    <button ion-button round float-right (click)="openGamesPage()">Next<ion-icon name="arrow-forward"></ion-icon></button>
+<ion-content  id = "InviteFriends">
+  <div class = "titleDiv">
+    <p class = "accountLink">Account</p>
+    <h1 class = "Title">Invite Friends</h1>
+  </div>
+<ul class = "InviteList">
+      <li class = "inv"><button ion-button round full (click)="login()">Invite 1</button></li>
+      <li class = "inv"><button ion-button round full (click)="login()">Invite 2</button></li>
+      <li class = "inv"><button ion-button round full (click)="login()">Invite 3</button></li>
+      <li class = "inv"><button ion-button round full (click)="login()">Invite 4</button></li>
+</ul>
 
+<button class = "Next" ion-button round (click)="openInviteFriends()">Next<ion-icon name="arrow-forward"></ion-icon></button>
 
 </ion-content>

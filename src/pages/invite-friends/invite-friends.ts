@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import { Navbar } from 'ionic-angular';
-import { ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { GamesPage } from '../games/games';
 
 /**
  * Generated class for the InviteFriendsPage page.
@@ -17,17 +14,12 @@ import { GamesPage } from '../games/games';
   templateUrl: 'invite-friends.html',
 })
 export class InviteFriendsPage {
-  @ViewChild(Navbar) navBar: Navbar;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InviteFriendsPage');
-  }
-  openGamesPage() {
-    this.navCtrl.push(GamesPage);
-    this.navCtrl.setRoot(GamesPage);
   }
 
 }

@@ -7,6 +7,7 @@ import { Push } from '@ionic-native/push';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { InviteFriendsPage } from '../pages/invite-friends/invite-friends';
+import { AccountPage } from '../pages/account/account';
 import { GamesPage } from '../pages/games/games';
 
 
@@ -23,7 +24,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     MyApp,
     HomePage,
     InviteFriendsPage,
-    GamesPage
+    GamesPage,
+    AccountPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     MyApp,
     HomePage,
     InviteFriendsPage,
-    GamesPage
+    GamesPage,
+    AccountPage
   ],
   providers: [
     StatusBar,
