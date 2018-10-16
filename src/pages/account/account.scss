@@ -1,9 +1,8 @@
-page-account {
-   
-}
+page-account {}
+
 .accordion {
     background-color: #eee;
-    color:orangered;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -13,15 +12,20 @@ page-account {
     transition: 0.4s;
 }
 
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+
+.active,
+.accordion:hover {
     background-color: #ccc;
 }
 
+
 /* Style the accordion panel. Note: hidden by default */
+
 .panel {
     padding: 0 18px;
     background-color: white;
-    display: none;
+    display: block;
     overflow: hidden;
 }

@@ -7,6 +7,9 @@
 <ion-header>
 
     <ion-navbar>
+        <button ion-button menuToggle icon-only persistent='true'>
+            <ion-icon name="menu"></ion-icon>
+        </button>
         <ion-title>Account</ion-title>
     </ion-navbar>
 
@@ -14,7 +17,7 @@
 
 
 <ion-content padding>
-    <button class="accordion" ion-button round (click)="expand()">Personal Information<ion-icon name="arrow-forward"></ion-icon></button>
+    <button class="accordion" ion-button round (click)="expand()">Personal Information</button>
     <div class="panel">
         <p>Spencer Woods</p>
         <p>1234 w random St. Boise ID</p>
@@ -23,7 +26,7 @@
         <p>Height: 6 ft.</p>
     </div>
 
-    <button class="accordion" ion-button round (click)="expand()">Achievments<ion-icon name="arrow-forward"></ion-icon></button>
+    <button class="accordion" ion-button round (click)="expand()">Achievments</button>
     <div class="panel">
         <p>Completed 100 Challenges!</p>
         <p>Came first place 8 times!</p>
@@ -32,7 +35,7 @@
         <p>Place first place in all game modes!</p>
     </div>
 
-    <button class="accordion" ion-button round (click)="expand()">Statistics<ion-icon name="arrow-forward"></ion-icon></button>
+    <button class="accordion" ion-button round (click)="expand()">Statistics</button>
     <div class="panel">
         <p>54 miles run</p>
         <p>3420 steps climbed</p>

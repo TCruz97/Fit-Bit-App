@@ -10,12 +10,12 @@
 <ion-content padding id="homepage">
     <ion-list>
         <ion-item class="login-info">
-            <ion-label floating style="color:white">Email</ion-label>
+            <ion-label floating>Email</ion-label>
             <ion-input type="email" name="username" [(ngModel)]="data.username" style="color:white"></ion-input>
         </ion-item>
 
         <ion-item class="login-info">
-            <ion-label floating style="color:white">Password</ion-label>
+            <ion-label floating>Password</ion-label>
             <ion-input type={{type}} name="password" [(ngModel)]="data.password" style="color:white"></ion-input>
             <button ion-button clear item-end (click)='showHide()' style="height:32px;">
             <ion-icon name="eye" style="font-size:32px;"></ion-icon>
@@ -31,7 +31,7 @@
     <!-- <ion-avatar item-start id="logo">
         <img src="assets/imgs/logo2.png">
     </ion-avatar> -->
-    <button ion-button round float-right (click)="openInviteFriends()">Next<ion-icon name="arrow-forward"></ion-icon></button>
+    <button ion-button round float-right (click)="openInviteFriends()">Next</button>
     <!-- <button ion-button round float-right (click)="openAccount()">Next2<ion-icon name="arrow-forward"></ion-icon></button> -->
 
 </ion-content>
