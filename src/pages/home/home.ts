@@ -8,7 +8,7 @@ import { Navbar } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
 import { HttpHeaders } from '@angular/common/http';
 import { InviteFriendsPage } from '../invite-friends/invite-friends';
-import { AccountPage } from '../account/account';
+
 /**
  * Generated class for the HomePage page.
  *
@@ -252,8 +252,4 @@ export class HomePage {
     this.navCtrl.setRoot(InviteFriendsPage);
   }
 
-  openAccount() {
-    this.navCtrl.push(AccountPage);
-    this.navCtrl.setRoot(AccountPage);
-  }
 }

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AccountPage } from '../account/account';
+import { GamesPage } from '../games/games';
 
 /**
  * Generated class for the InviteFriendsPage page.
@@ -21,5 +23,15 @@ export class InviteFriendsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad InviteFriendsPage');
   }
+  openAccountPage() {
+    this.navCtrl.push(AccountPage);
+    this.navCtrl.setRoot(AccountPage);
+  }
+
+  openSelectGamesPage() {
+    this.navCtrl.push(GamesPage);
+    this.navCtrl.setRoot(GamesPage);
+  }
+
 
 }
