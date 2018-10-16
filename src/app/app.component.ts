@@ -8,6 +8,8 @@ import { HomePage } from '../pages/home/home';
 import { InviteFriendsPage } from '../pages/invite-friends/invite-friends';
 import { AccountPage } from '../pages/account/account';
 import { GamesPage } from '../pages/games/games';
+import { StatusPage } from '../pages/status/status';
+import { LeaderboardPage } from '../pages/leaderboard/leaderboard';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,7 +29,9 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Invite', component: InviteFriendsPage },
       { title: 'Choose Activity', component: GamesPage },
-      { title: 'Manage Account', component: AccountPage }
+      { title: 'Manage Account', component: AccountPage },
+      { title: 'Activity Progress', component: StatusPage },
+      { title: 'Leaderboard', component: LeaderboardPage }
     ];
 
   }
