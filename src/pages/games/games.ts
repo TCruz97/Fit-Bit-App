@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { StatusPage } from '../status/status';
+
 
 /**
  * Generated class for the GamesPage page.
@@ -7,7 +9,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
 @IonicPage()
 @Component({
   selector: 'page-games',
@@ -21,5 +22,8 @@ export class GamesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad GamesPage');
   }
-
+  openStatusPage() {
+    this.navCtrl.push(StatusPage);
+    this.navCtrl.setRoot(StatusPage);
+  }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LeaderboardPage } from '../leaderboard/leaderboard';
 
 /**
  * Generated class for the StatusPage page.
@@ -21,5 +22,8 @@ export class StatusPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad StatusPage');
   }
-
+  openLeaderboardPage() {
+    this.navCtrl.push(LeaderboardPage);
+    this.navCtrl.setRoot(LeaderboardPage);
+  }
 }

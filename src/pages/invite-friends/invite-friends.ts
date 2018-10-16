@@ -16,6 +16,8 @@ import { GamesPage } from '../games/games';
   templateUrl: 'invite-friends.html',
 })
 export class InviteFriendsPage {
+  account = AccountPage;
+  invite = InviteFriendsPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
