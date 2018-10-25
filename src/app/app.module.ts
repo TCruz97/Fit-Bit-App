@@ -12,7 +12,7 @@ import { AccountPage } from '../pages/account/account';
 import { GamesPage } from '../pages/games/games';
 import { StatusPage } from '../pages/status/status';
 import { LeaderboardPage } from '../pages/leaderboard/leaderboard';
-
+import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -29,7 +29,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     GamesPage,
     AccountPage,
     StatusPage,
-    LeaderboardPage
+    LeaderboardPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +46,9 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     GamesPage,
     AccountPage,
     StatusPage,
-    LeaderboardPage
+    LeaderboardPage,
+    TabsPage
+    
   ],
   providers: [
     StatusBar,

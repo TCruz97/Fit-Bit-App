@@ -10,14 +10,14 @@ import { AccountPage } from '../pages/account/account';
 import { GamesPage } from '../pages/games/games';
 import { StatusPage } from '../pages/status/status';
 import { LeaderboardPage } from '../pages/leaderboard/leaderboard';
-
+import { TabsPage } from '../pages/tabs/tabs';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = TabsPage;
 
   pages: Array<{ title: string, component: any }>;
 
