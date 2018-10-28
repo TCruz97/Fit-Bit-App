@@ -11,6 +11,7 @@ import { GamesPage } from '../pages/games/games';
 import { StatusPage } from '../pages/status/status';
 import { LeaderboardPage } from '../pages/leaderboard/leaderboard';
 import { TabsPage } from '../pages/tabs/tabs';
+import { CurrentPage } from '../pages/current/current';
 @Component({
   templateUrl: 'app.html'
 })
