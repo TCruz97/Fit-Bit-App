@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { LeaderboardPage } from '../leaderboard/leaderboard';
 /**
  * Generated class for the CurrentPage page.
  *
@@ -22,4 +22,9 @@ export class CurrentPage {
     console.log('ionViewDidLoad CurrentPage');
   }
 
+
+  openLeaderBoard() {
+    this.navCtrl.push(LeaderboardPage);
+    this.navCtrl.setRoot(LeaderboardPage);
+  }
 }

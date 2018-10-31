@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AccountPage } from '../account/account';
 import { GamesPage } from '../games/games';
 import { LeaderboardPage } from '../leaderboard/leaderboard';
-import { HomePage } from '../home/home';
+import { LoginPage} from '../login/login';
 import { InviteFriendsPage } from '../invite-friends/invite-friends';
 import { CurrentPage } from '../current/current';
 /**
@@ -29,7 +29,7 @@ export class TabsPage {
   GamesPage = GamesPage;
   AccountPage = AccountPage;
   LeaderboardPage = LeaderboardPage;
-  HomePage = HomePage;
+  LoginPage = LoginPage;
   InviteFriendsPage = InviteFriendsPage;
   CurrentPage = CurrentPage;
 
