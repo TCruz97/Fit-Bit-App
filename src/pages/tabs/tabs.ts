@@ -5,6 +5,7 @@ import { GamesPage } from '../games/games';
 import { LeaderboardPage } from '../leaderboard/leaderboard';
 import { HomePage } from '../home/home';
 import { InviteFriendsPage } from '../invite-friends/invite-friends';
+import { CurrentPage } from '../current/current';
 /**
  * Generated class for the TabsPage page.
  *
@@ -30,5 +31,6 @@ export class TabsPage {
   LeaderboardPage = LeaderboardPage;
   HomePage = HomePage;
   InviteFriendsPage = InviteFriendsPage;
+  CurrentPage = CurrentPage;
 
 }

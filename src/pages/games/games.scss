@@ -1,24 +1,10 @@
-.card-background-page {
-    ion-card {
-        position: relative;
-        text-align: center;
-        height: 20%;
-    }
-    .card-title {
-        position: absolute;
-        top: 36%;
-        font-size: 2.0em;
-        width: 100%;
-        font-weight: bold;
-        color: #fff;
-    }
-    .card-subtitle {
-        font-size: 1.0em;
-        position: absolute;
-        top: 52%;
-        width: 100%;
-        color: #fff;
-    }
+.atv-avatar img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 250px !important; //any size
+    max-height: 250px !important;
+    position: absolute;
+    border-radius: 50%;
 }
 
 .game-list {
@@ -27,8 +13,8 @@
 
 #run-button {
     background: #04ACE3;
+    text-align: left;
     padding: 3%;
-    // font-size: 0.9em;
     .atv-header {
         font-size: 10.0em;
     }
@@ -37,7 +23,7 @@
 #walk-button {
     background: #7AC74F;
     padding: 3%;
-    // font-size: 0.9em;
+    text-align: left;
     .atv-header {
         font-size: 10.0em;
     }
@@ -46,7 +32,7 @@
 #climb-button {
     background: #F9DC5C;
     padding: 3%;
-    // font-size: 0.9em;
+    text-align: left;
     .atv-header {
         font-size: 10.0em;
     }
@@ -55,7 +41,7 @@
 #bike-button {
     background: #FF4C50;
     padding: 3%;
-    //font-size: 0.9em;
+    text-align: left;
     .atv-header {
         font-size: 10.0em;
     }
@@ -64,7 +50,7 @@
 #swim-button {
     background: #118AB2;
     padding: 3%;
-    // font-size: 0.9em;
+    text-align: left;
     .atv-header {
         font-size: 10.0em;
     }

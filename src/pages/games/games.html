@@ -4,7 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
- 
+
 <ion-header>
 
     <ion-navbar>
@@ -21,8 +21,8 @@
     <ion-list>
         <ion-item-sliding>
             <ion-item id="run-button">
-                <ion-avatar item-start class="atv-avatar">
-                    <img src="assets/imgs/run.png">
+                <ion-avatar item-start>
+                    <img class="atv-avatar" src="assets/imgs/run.png">
                 </ion-avatar>
                 <h2 class="atv-header">Run</h2>
             </ion-item>
@@ -42,14 +42,14 @@
     <ion-list>
         <ion-item-sliding>
             <ion-item id="walk-button">
-                <ion-avatar item-start class="atv-avatar">
-                    <img src="assets/imgs/walk.png">
+                <ion-avatar item-start>
+                    <img class="atv-avatar" src="assets/imgs/walk.png">
                 </ion-avatar>
                 <h2 class="atv-header">Walk</h2>
             </ion-item>
             <ion-item-options side="left">
                 <button ion-button color="secondary">
-                        <ion-icon name="checkmark"></ion-icon>
+                        <ion-icon name="checkmark" ></ion-icon>
                         Select
                       </button>
                 <button ion-button color="danger">
@@ -64,7 +64,7 @@
         <ion-item-sliding>
             <ion-item id="climb-button">
                 <ion-avatar item-start>
-                    <img src="assets/imgs/stairs.png">
+                    <img src="assets/imgs/stairs.png" class="atv-avatar">
                 </ion-avatar>
                 <h2 class="atv-header">Climb</h2>
             </ion-item>
@@ -84,8 +84,8 @@
     <ion-list>
         <ion-item-sliding>
             <ion-item id="bike-button">
-                <ion-avatar item-start class="atv-avatar">
-                    <img src="assets/imgs/bicycle.png">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/bicycle.png" class="atv-avatar">
                 </ion-avatar>
                 <h2 class="atv-header">Bike</h2>
             </ion-item>
@@ -105,8 +105,8 @@
     <ion-list>
         <ion-item-sliding>
             <ion-item id="swim-button">
-                <ion-avatar item-start class="atv-avatar">
-                    <img src="assets/imgs/swim.png">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/swim.png" class="atv-avatar">
                 </ion-avatar>
                 <h2 class="atv-header">Swim</h2>
             </ion-item>
@@ -129,5 +129,19 @@
                 <button>hello</button> 
             </ion-buttons>
         </ion-toolbar>
+    </ion-footer>
+     <ion-content text-center>
+        <div class="digit">
+            <span class="label label-default">{{timer.minutes}}</span> :
+            <span class="label label-default">{{timer.secondes}}</span>
+        </div>
+    </ion-content>
+
+    <ion-footer text-center>
+        <div class="action">
+            <button class="btn btn-danger btn-lg" *ngIf="state.backward" (click)="backward()"></button>
+            <button class="btn btn-danger btn-lg" *ngIf="state.stop" (click)="stop()"></button>
+            <button class="btn btn-primary btn-lg" *ngIf="state.play" (click)="play()"></button>
+        </div>
     </ion-footer> -->
 </ion-content>

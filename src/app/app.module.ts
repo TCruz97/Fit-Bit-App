@@ -20,6 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 //import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { CurrentPage } from '../pages/current/current';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     AccountPage,
     StatusPage,
     LeaderboardPage,
-    TabsPage
+    TabsPage,
+    CurrentPage
   ],
   imports: [
     BrowserModule,
@@ -47,8 +49,9 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     AccountPage,
     StatusPage,
     LeaderboardPage,
-    TabsPage
-    
+    TabsPage,
+    CurrentPage
+
   ],
   providers: [
     StatusBar,
